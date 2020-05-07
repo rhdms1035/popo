@@ -1,0 +1,86 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Play&display=swap');
+/* font-family: 'Play', sans-serif;
+font-family: 'Monoton', cursive; */
+
+*{margin: 0; padding: 0; box-sizing: border-box;}
+a {color:inherit; text-decoration: none; }
+ol, ul {list-style-type: none;}
+table {width: 100%; border-collapse:collapse; table-layout: fixed;}
+.cf:after, .cf:before {content: ""; display: block; clear: both;}
+header, section {display: block;}
+
+body {width: 100%; height: 100%; position: fixed; background: #111; color:#bbb;}
+.vid {position: fixed; width: 100%; height: 100%; top:0; left:0; background: #f00;}
+.vid video {min-width: 100%; min-height: 100%; 
+    position: absolute; top:50%; left:50%; transform: translate(-50%, -50%); }
+
+header {position: fixed; width: 700px; height: 100%; background: #b9fb05; transform: skew(-40deg); left: -420px; font-weight: bold;}
+h1 {position: absolute; top:40px; right: 150px; 
+    transform: skew(40deg);}
+h1 img {width: 280px;}
+
+#gnb {position: absolute; top:220px; right: 0px; width: 220px; font-family: 'Play', sans-serif}
+#gnb em {transform: skew(40deg); display: block; 
+    font-style: normal;}
+/* 트랜스폼 속성은 block 요소에만 적용됨 */
+.depth1 > li {height: 50px; line-height: 50px; color:#222; text-align: left; font-size: 18px; transition: all 0.4s; position: relative;}
+.depth1 > li.on {background: #111; color: #fff;}
+.depth1 > li:hover {background: #111; color: #fff;}
+.depth1 > li > a {display: block; padding-left: 40px;}
+.depth1 > li:hover .depth2 {display: block; opacity: 0.8;
+     left: 205px;}
+.depth1 > li.on .depth2 {opacity: 0.8; left: 205px; top:-10px;}
+
+.depth2 {position: absolute; left: 0px; top:0; width: 180px; transition: all 0.5s; opacity: 0;}
+.depth2 > li {height: 40px; background: #222; border-bottom: 1px solid #b9fb05; line-height: 40px; font-size: 16px; color: #fff; margin-bottom: 3px; text-align: center;}
+.depth2 > li > a {display: block;}
+.depth2 > li:hover {background: #b9fb05; color: #111;}
+
+#sns {position: fixed; top:60px; right: 50px;}
+#sns li {display: inline-block; font-size: 25px; color: #b9fb05; opacity: 0.5; margin-right: 20px; transition: all 0.5s;} 
+#sns li:hover {transform: scale(1.5);}
+
+.txtbox {position:fixed; top:200px; right:70px; 
+    width:500px; height:280px;}
+.tit {font-size: 160px; font-family: 'Monoton', cursive; color: #b9fb05; position: absolute; top:0px; letter-spacing: -1px; right: 0;}
+.tit em {font-size:50px; font-family: 'Play', sans-serif; color:#fff}
+.txt {position:absolute; top:200px; right:0px; font-size:34px; font-family:play; color:#bbb; letter-spacing:-2px;} 
+.txt strong {font:34px; font-family: arial; color: #b9fb05; margin-left: 20px;}
+
+#side {position: fixed; top:0; right: -800px; width: 800px; height: 100%; background: #111; opacity: 0.5; transform: skew(-40deg); transition: all 0.5s;}
+#side:hover {right: -500px; opacity:0.8}
+
+.con {width: 400px; height: 100%; background: #000; position: absolute; left: 50px; transition: all 1s;}
+#side:hover .con {left: 50px;}
+
+.con p {position:absolute; left:50px; width:300px; height:100px;}
+.con p:nth-child(1) 
+{bottom: 270px; transition:all 0.4s; transform:translate(200px);}
+.con p:nth-child(2) 
+{bottom: 160px; transition:all 0.8s; transform:translate(200px)}
+.con p:nth-child(3)
+ {bottom: 50px; transition:all 1.2s; transform:translate(200px)}
+
+ #side:hover .con p:nth-child(1) 
+{bottom: 270px; transition:all 0.4s; transform:translate(0px)}
+#side:hover .con p:nth-child(2) 
+{bottom: 160px; transition:all 0.8s; transform:translate(0px)}
+#side:hover .con p:nth-child(3)
+ {bottom: 50px; transition:all 1.2s; transform:translate(0px)}
+
+.con p em {transform: skew(40deg); display:block; font: bold normal 16px/1.7 arlal; color:#b9fb05;}
+.con p img {opacity: 0.3; transition: all 0.5s;}
+.con p img:hover {opacity: 1;}
+
+.btnContents {position:absolute; bottom:40px; left:100px; color:#b9fb05; transform:skew(40deg); width:150px; height:50px; font-size:60px;}
+.btnContents i {position: absolute; bottom: 0px; right: 0px; animation: ani 1.5s infinite linear;}
+/* 화살표 출발하는 시간을 각각 다르게 */
+.btnContents i:nth-child(1) {animation-delay: 0s;}
+.btnContents i:nth-child(2) {animation-delay: 0.5s;}
+.btnContents i:nth-child(3) {animation-delay: 1s;}
+@keyframes ani {
+    0% {right: 0px; transform: scale(1); opacity: 1;} 
+100% {right: 100px; transform: scale(1.5); opacity: 0;}
+}
+#side:hover .btnContents {left: 700px; }
