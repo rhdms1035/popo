@@ -10,15 +10,31 @@ table {width: 100%; border-collapse:collapse; table-layout: fixed;}
 .cf:after, .cf:before {content: ""; display: block; clear: both;}
 header, section {display: block;}
 
+nav {display: none;}
+.txtbox {display: none;}
+#side {display: none;}
+header h1 {display: none;}
+
 body {width: 100%; height: 100%; position: fixed; background: #111; color:#bbb;}
-.vid {position: fixed; width: 100%; height: 100%; top:0; left:0; background: #f00;}
-.vid video {min-width: 100%; min-height: 100%; 
-    position: absolute; top:50%; left:50%; transform: translate(-50%, -50%); }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 header {position: fixed; width: 700px; height: 100%; background: #b9fb05; transform: skew(-40deg); left: -420px; font-weight: bold;}
 h1 {position: absolute; top:40px; right: 150px; 
     transform: skew(40deg);}
-h1 img {width: 280px;}
+h1 img {width:  280px;}
 
 #gnb {position: absolute; top:220px; right: 0px; width: 220px; font-family: 'Play', sans-serif}
 #gnb em {transform: skew(40deg); display: block; 
