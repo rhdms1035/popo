@@ -10,13 +10,14 @@ header, section {display: block;}
 html { height:100%; }
 body {  color:#bbb; height:100%;
 }
+.row { max-width:1700px; margin:0 auto; }
 
 header {  height: 100%; background: url(../img/slider1.jpg) no-repeat;
     background-size: cover; position:relative; }
-h1 { position:relative; top:100px;  left:100px;}
+h1 { position:relative; top:100px;}
 h1 img {width: 150px;}
 
-#gnb { width: 220px; position:relative; top:200px;  left:100px}
+#gnb { width: 220px; position:relative; top:200px; }
 #gnb em { display: block; 
     font-style: normal;}
 /* 트랜스폼 속성은 block 요소에만 적용됨 */
@@ -29,7 +30,7 @@ h1 img {width: 150px;}
 .depth1 > li.on .depth2 {opacity: 0.8; left: 205px; top:-10px;}
 
 .depth2 {position: absolute; left: 0px; top:0; width: 180px; transition: all 0.5s; opacity: 0;}
-.depth2 > li {height: 40px; background: #ff889e; border-bottom: 1px solid #e17285; line-height: 40px; font-size: 16px; color: #fff; margin-bottom: 3px; text-align: center;}
+.depth2 > li {height: 40px; background: #ff889e; border-bottom: 1px solid #e17285; line-height: 40px; font-size: 13px; color: #fff; margin-bottom: 3px; text-align: center;}
 .depth2 > li > a {display: block;}
 .depth2 > li:hover {background: #e17285; color: #fff;}
 
@@ -37,22 +38,61 @@ h1 img {width: 150px;}
 #sns li {display: inline-block; font-size: 25px; color: #e17285; opacity: 0.5; margin-right: 20px; transition: all 0.5s;} 
 #sns li:hover {transform: scale(1.5);}
 
+section .me h2 {
+  padding: 55px 0 55px;
+  text-align: center;
+  font-size: 40px;
+}
+section .imgmm {
+  margin: 30px auto; 
+  cursor: pointer;
+}
+section .imgmm li {
+  float: left;
+  width: 16%;
+  overflow: hidden;
+  margin:0  0.33%;
+  border: 1px solid #ddd;
+  position: relative;
+}
+section .imgmm img{
+  width: 100%;
+  transition:all 0.4s;
+}
+section .imgmm img:hover {
+  transform:scale(1.1) 
+}
+section .imgmm li:after {
+  content:"";
+   position:absolute; transition:all  0.4s;
+  top:50%; left:50%; bottom:50%; right:50%; 
+  background:rgba(255, 100, 123, 0.3);
+}
+section .imgmm li:hover:after {
+  top:0%; left:0%; bottom:0%; right:0%; 
+}
+section .imgmm li:before {  content:"\f00e";
+  font-family:'Font Awesome 5 Free'; 
+  font-weight:900 !important;
+  color:#fff;
+  font-size:30px;
+  position:absolute; top:50%; left:50%;
+  transform:translate(-50%, -50%);
+  opacity:0;  transition:all  0.4s  0.2s;  z-index:99999999;
+}
 
 
 
+footer  {background: #ff889e; padding: 10px 20px 50px; color:white; }
+footer ul {float: left; }
+footer ul li {font-size: 16px; float: left;  padding:10px;}
+footer .info {font-size: 14px; 
+  line-height: 1.2; font-family: 'Kodchasan', sans-serif;
+  margin-top: 20px; float: right;; width:20% }
+ footer .info2 {font-size: 16px; float: left; 
+    line-height: 1.5; font-family: 'Kodchasan', sans-serif;
+    margin-top: 20px; width: 50%; }
+footer .info2 em {font-style: normal; 
+  font-weight: bold; font-size: 18px;}
 
-footer {
-    border-top: 1px solid #ddd;
-  }
-  .foot_list  li {   display:inline-block;  margin-top:25px; 
-    font-weight: bold;   font-size: 15px; }
-  .foot_list   li:first-child:after {
-      content: "|";   display: inline-block;
-      padding: 0  10px;    font-size: 10px; 
-      color: #000;     position: relative;    top: -2px;  left:2px  }  
-   .foot_area  h2 {  padding-top: 25px;
-        font-size: 14px;    color: #666;    }
-  .foot_area  .addr {    padding-top: 5px;
-          line-height: 1.4;      font-size: 13px;      color: #666;      }
-  .foot_area   .copy {   padding-top: 3px;
-            font-size: 13px;   color: #666;   letter-spacing: 0;     }      
+
