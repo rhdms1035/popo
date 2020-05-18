@@ -30,9 +30,24 @@ h1 img {width: 150px;}
 .depth1 > li.on .depth2 {opacity: 0.8; left: 205px; top:-10px;}
 
 .depth2 {position: absolute; left: 0px; top:0; width: 180px; transition: all 0.5s; opacity: 0;}
-.depth2 > li {height: 40px; background: #ff889e; border-bottom: 1px solid #e17285; line-height: 40px; font-size: 13px; color: #fff; margin-bottom: 3px; text-align: center;}
+.depth2 > li {height: 40px; background: #ff889e; border-bottom: 1px solid #e17285; line-height: 40px; font-size: 13px; color: #fff; margin-bottom: 3px; text-align: center; }
 .depth2 > li > a {display: block;}
 .depth2 > li:hover {background: #e17285; color: #fff;}
+
+/* 서브메뉴누르면 이미지나오게하기 */
+.depth2 > li > .depth3 {
+  position: absolute;
+  top:0;
+  left: 200px;
+  width: 400px;
+  display: none;
+  transition: all 0.4s;
+
+}
+.depth2 > li:hover > .depth3 {
+  display: block;
+}
+
 
 #sns {position: absolute; top:60px; right: 50px;}
 #sns li {display: inline-block; font-size: 25px; color: #e17285; opacity: 0.5; margin-right: 20px; transition: all 0.5s;} 
