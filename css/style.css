@@ -12,16 +12,18 @@ body {  color:#bbb; height:100%;
 }
 .row { max-width:1700px; margin:0 auto; }
 
-header {  height: 100%; background: url(../img/slider1.jpg) no-repeat;
-    background-size: cover; position:relative; }
+header {  height: 85%; background: url(../img/slider1_1.jpg) no-repeat;
+    background-size: cover; position:relative; 
+    margin-bottom: 100px;}
+
 h1 { position:relative; top:100px;}
 h1 img {width: 150px;}
 
-#gnb { width: 220px; position:relative; top:200px; }
+#gnb { width: 220px; position:relative; top:150px; }
 #gnb em { display: block; 
     font-style: normal;}
 /* 트랜스폼 속성은 block 요소에만 적용됨 */
-.depth1 > li {height: 50px; line-height: 50px; color:#bbb; text-align: left; font-size: 18px; transition: all 0.4s; position: relative; font-family: 'Kodchasan', sans-serif; }
+.depth1 > li {height: 50px; line-height: 50px; color:#aaa; text-align: left; font-size: 18px; transition: all 0.4s; position: relative; font-family: 'Kodchasan', sans-serif; }
 .depth1 > li.on {background: #ff889e; color: #fff;}
 .depth1 > li:hover {background: #ff889e; color: #fff;}
 .depth1 > li > a {display: block; padding-left: 40px;}
@@ -33,6 +35,11 @@ h1 img {width: 150px;}
 .depth2 > li {height: 40px; background: #ff889e; border-bottom: 1px solid #e17285; line-height: 40px; font-size: 13px; color: #fff; margin-bottom: 3px; text-align: center; }
 .depth2 > li > a {display: block;}
 .depth2 > li:hover {background: #e17285; color: #fff;}
+
+.depth3 > img {
+  width: 450px;
+  height: 400px;
+}
 
 /* 서브메뉴누르면 이미지나오게하기 */
 .depth2 > li > .depth3 {
@@ -49,18 +56,28 @@ h1 img {width: 150px;}
 }
 
 
-#sns {position: absolute; top:60px; right: 50px;}
+#sns {position: absolute; top:80px; right: 50px;}
 #sns li {display: inline-block; font-size: 25px; color: #e17285; opacity: 0.5; margin-right: 20px; transition: all 0.5s;} 
 #sns li:hover {transform: scale(1.5);}
 
 section .me h2 {
-  padding: 55px 0 55px;
+  padding: 35px 0 15px;
   text-align: center;
   font-size: 40px;
+  color:#ff889e;
+  font-family: 'Kodchasan', sans-serif;
+}
+section .me2 h2 {
+  padding: 35px 0 15px;
+  text-align: center;
+  font-size: 40px;
+  color:#ff889e;
+  font-family: 'Kodchasan', sans-serif;
 }
 section .imgmm {
   margin: 30px auto; 
   cursor: pointer;
+  margin-bottom: 50px;
 }
 section .imgmm li {
   float: left;
@@ -92,6 +109,7 @@ padding-left: 85px;
 background-color:#ff889e;
 padding-top: 30px;
 padding-bottom: 30px;
+margin-top: 80px;
 }
 
 section .imghh {
