@@ -1,1 +1,1 @@
-https://rhdms1035.github.io/popo-master/
+https://rhdms1035.github.io/popo
