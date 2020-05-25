@@ -131,8 +131,9 @@ section .imghh li {
 
 .contents {
   padding: 10px 0;
-  width:1700px;
+  max-width:1700px;
   margin: 50px auto;
+  position: relative;
 }
 .contents .tabmenu {
   width: 48%;
@@ -169,9 +170,14 @@ section .imghh li {
 
 .notice table {
   width: 100%; font-size: 16px; 
-  text-align: left; margin: 10px auto;}
+  text-align: left; margin: 10px auto;
+  table-layout: fixed;
+}
 .notice td {
   padding:15px 30px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .notice tr:nth-child(even) {background: #ff889e;}
 .notice tr:nth-child(even) {color:#fff;}
@@ -211,7 +217,7 @@ footer ul {float: left; }
 footer ul li {font-size: 16px; float: left;  padding:10px;}
 footer .info {font-size: 14px; 
   line-height: 1.2; font-family: 'Kodchasan', sans-serif;
-  margin-top: 20px; float: right;; width:27% }
+  margin-top: 50px; float: right; width:25%; }
  footer .info2 {font-size: 16px; float: left; 
     line-height: 1.5; font-family: 'Kodchasan', sans-serif;
     margin-top: 20px; width: 50%; }
