@@ -41,6 +41,7 @@ h1 img {width: 150px;}
   height: 400px;
 }
 
+
 /* 서브메뉴누르면 이미지나오게하기 */
 .depth2 > li > .depth3 {
   position: absolute;
@@ -106,11 +107,12 @@ section .imgmm li:hover:after {
 }
 
 section .imglong {
-padding-left: 85px;
 background-color:#ff889e;
-padding-top: 30px;
-padding-bottom: 30px;
 margin-top: 80px;
+padding: 30px 85px;
+}
+section .imglong img {
+  width:100%
 }
 
 section .imghh {
@@ -130,7 +132,7 @@ section .imghh li {
 .contents {
   padding: 10px 0;
   width:1700px;
-  margin: 0 auto;
+  margin: 50px auto;
 }
 .contents .tabmenu {
   width: 48%;
@@ -170,7 +172,6 @@ section .imghh li {
   text-align: left; margin: 10px auto;}
 .notice td {
   padding:15px 30px;
-
 }
 .notice tr:nth-child(even) {background: #ff889e;}
 .notice tr:nth-child(even) {color:#fff;}
@@ -182,6 +183,7 @@ section .imghh li {
    padding: 7px;
    border: 1px solid #ff889e;
    width: 200px;
+   margin-top: 30px;
   }
   .gallery .gift {
    top: 80%; left:50%; transform: translate(-50%, -50%); 
@@ -189,10 +191,18 @@ section .imghh li {
    font-weight: bold; text-align: center;
    font-size: 40px;
   }
+
   /* 탭메뉴끝 */
 
-.contents .banner {width: 48%; float: left; position: relative;}
-.contents .banner img {width: 300px height: 180px;}
+  .banner {
+    width:48%;
+    float: right;
+  }
+  .banner img {
+    width:100%;
+    margin-top: 20px;
+  }
+
 
 
 
