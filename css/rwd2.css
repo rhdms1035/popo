@@ -178,9 +178,9 @@ footer .info {font-size: 14px;
        font-size: 20px;
       }
 
-      /* 상단시작 */
+      /* 작은메뉴 상단시작 */
       #gnb {display: none;}
-      #sns {display: none;}
+
 
       #header .row {
         background: #ff889e; 
@@ -243,14 +243,20 @@ footer .info {font-size: 14px;
 
   
    /* 작은화면 메뉴닫기버튼 */
-   #header.on .closeMOgnb {display: block; position: absolute; top:40px; right: 15px; width: 25px; height: 17px; }
+   #header.on  .closeMOgnb {display:block; position: absolute; top:50px; right: 15px; width: 25px; height: 17px; }
    .closeMOgnb a {display: block;}
 
-       /* 엑스모양만들기 */
-       .closeMOgnb span {display: block; width: 25px; height: 3px; border-radius: 10px; transform: rotate(45deg); 
-        background: #fff;  position: absolute; top:0; left: 0;}
-        .closeMOgnb span:nth-of-type(2) {transform: rotate(-45deg);}
+  /* 엑스모양만들기 */
+  .closeMOgnb span {display: block; width: 35px; height: 3px; border-radius: 10px; transform: rotate(45deg); 
+   background: #fff;  position: absolute; top:5px; right: 15px; }
+  .closeMOgnb span:nth-of-type(2) {transform: rotate(-45deg);}
 
+/* sns다시 나타나게하기 */
+#sns {        position: absolute; 
+  top:600px; left:270px; 
+}
+#sns li {display: inline-block; font-size: 30px; color: #e17285; opacity: 0.5; margin-right: 20px; transition: all 0.5s;} 
+#sns li:hover {transform: scale(1.5);}
 
 
 

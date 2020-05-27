@@ -240,3 +240,6 @@ footer .info2 em {font-style: normal;
     top: 0;
     left: 0;
   }
+
+  .closeMOgnb {display:none;}
+  .openMOgnb {display: none;}
