@@ -77,7 +77,7 @@ footer .info {font-size: 14px;
 }
 .popupBox.on .inner {
   position: absolute;
-  top:1000px;
+  top:500px;
   left: 50%;
   transform: translate(-50%);
   background: #ff889e;
@@ -93,6 +93,8 @@ footer .info {font-size: 14px;
   background: none;
   border: none;
 }
+
+
 
 }
 

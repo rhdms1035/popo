@@ -44,11 +44,15 @@ $(".me  li > a").on("click", function(e){
     // 위 경로에 담겨 있는 링크가 눌리지 않게 preventDefault(); 요거를 씀
     e.preventDefault();
     // 각 속성을 가진게 추출이 되서 var 값에 담김
+    var top = $(this).parent().offset().top
     var href = $(this).attr("href")
     var src = $(this).find("img").attr("src")
     var alt = $(this).find("img").attr("alt")
     $(".popupBox").addClass("on")
-    $(".popupBox .inner a").attr("href", href)
+    $(".popupBox .inner").css({
+        top:top
+    })
+    $(".popupBox .inner").attr("href", href)
     $(".popupBox .inner img").attr("src", src).attr("alt", alt)
 })
 
@@ -64,10 +68,14 @@ $(".me2  li > a").on("click", function(e){
     // 위 경로에 담겨 있는 링크가 눌리지 않게 preventDefault(); 요거를 씀
     e.preventDefault();
     // 각 속성을 가진게 추출이 되서 var 값에 담김
+    var top = $(this).parent().offset().top
     var href = $(this).attr("href")
     var src = $(this).find("img").attr("src")
     var alt = $(this).find("img").attr("alt")
     $(".popupBox2").addClass("on")
+    $(".popupBox2 .inner").css({
+        top:top
+    })
     $(".popupBox2 .inner a").attr("href", href)
     $(".popupBox2 .inner img").attr("src", src).attr("alt", alt)
 })
