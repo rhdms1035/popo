@@ -40,7 +40,7 @@ $(window).resize(function(){
 })
 
 /* 사진을 누르면 새로 창나오는 팝업박스 만들기 */
-$(".imgmm  li > a").on("click", function(e){
+$(".me  li > a").on("click", function(e){
     // 위 경로에 담겨 있는 링크가 눌리지 않게 preventDefault(); 요거를 씀
     e.preventDefault();
     // 각 속성을 가진게 추출이 되서 var 값에 담김
@@ -57,3 +57,22 @@ $(".popupBox button").on("click", function(){
     $(this).parents(".popupBox").removeClass("on")
 })
 
+
+
+/* 사진을 누르면 새로 창나오는 팝업박스 만들기 */
+$(".me2  li > a").on("click", function(e){
+    // 위 경로에 담겨 있는 링크가 눌리지 않게 preventDefault(); 요거를 씀
+    e.preventDefault();
+    // 각 속성을 가진게 추출이 되서 var 값에 담김
+    var href = $(this).attr("href")
+    var src = $(this).find("img").attr("src")
+    var alt = $(this).find("img").attr("alt")
+    $(".popupBox2").addClass("on")
+    $(".popupBox2 .inner a").attr("href", href)
+    $(".popupBox2 .inner img").attr("src", src).attr("alt", alt)
+})
+
+// 엑스버튼을 누르면 창이 닫아짐
+$(".popupBox2 button").on("click", function(){
+    $(this).parents(".popupBox2").removeClass("on")
+})
