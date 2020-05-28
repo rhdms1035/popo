@@ -254,7 +254,6 @@ footer .info2 em {font-style: normal;
   left: 0;
   height: 200%;
   right: 0;
-  background: rgba(0,0,0,0.4);
   z-index: 999999999999999999999;
 }
 .popupBox.on .inner {
@@ -262,13 +261,13 @@ footer .info2 em {font-style: normal;
   top:1000px;
   left: 50%;
   transform: translate(-50%);
-  background: #fff;
+  background: #ff889e;
   text-align: center;
   padding: 20px;
 }
 .popupBox.on button {
   font-size: 40px;
-  color:#fff;
+  color:#ff889e;
   position: absolute;
   top:-35px;
   right: -35px;
@@ -286,21 +285,20 @@ footer .info2 em {font-style: normal;
   left: 0;
   height: 200%;
   right: 0;
-  background: rgba(0,0,0,0.4);
   z-index: 999999999999999999999;
 }
 .popupBox2.on .inner {
   position: absolute;
-  top:1500px;
+  top:1520px;
   left: 50%;
   transform: translate(-50%);
-  background: #fff;
+  background: #ff889e;
   text-align: center;
   padding: 20px;
 }
 .popupBox2.on button {
   font-size: 40px;
-  color:#fff;
+  color:#ff889e;
   position: absolute;
   top:-35px;
   right: -35px;
