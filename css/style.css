@@ -275,7 +275,7 @@ footer .info2 em {font-style: normal;
   border: none;
 }
 
-/* 사진을 누르면 새로 창나오는 팝업박스 만들기 */
+/* 사진을 누르면 새로 창나오는 팝업박스2 만들기 */
 .popupBox2 {display: none;}
 /* 팝업박스에 on이 붙으면 출력됨 */
 .popupBox2.on {

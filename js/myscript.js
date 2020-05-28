@@ -63,7 +63,7 @@ $(".popupBox button").on("click", function(){
 
 
 
-/* 사진을 누르면 새로 창나오는 팝업박스 만들기 */
+/* 사진을 누르면 새로 창나오는 팝업박스2 만들기 */
 $(".me2  li > a").on("click", function(e){
     // 위 경로에 담겨 있는 링크가 눌리지 않게 preventDefault(); 요거를 씀
     e.preventDefault();
@@ -84,3 +84,10 @@ $(".me2  li > a").on("click", function(e){
 $(".popupBox2 button").on("click", function(){
     $(this).parents(".popupBox2").removeClass("on")
 })
+
+// // 이걸 넣으면 스크롤을 내려서 눌러도 크기가 화면 크기에 맞는 위치에 팝업이 켜짐
+// var top = $(this).parent().offset().top
+// $(".popupBox2 .inner").css({
+//     top:top
+// })
+

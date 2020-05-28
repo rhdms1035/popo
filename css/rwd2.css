@@ -63,37 +63,6 @@ footer .info {font-size: 14px;
   line-height: 1.2; font-family: 'Kodchasan', sans-serif;
   margin-top: 30px; float: right; width:40%; }
 
-/* 사진을 누르면 새로 창나오는 팝업박스 만들기 */
-.popupBox {display: none;}
-/* 팝업박스에 on이 붙으면 출력됨 */
-.popupBox.on {
-  display: block;
-  position: absolute;
-  top:0;
-  left: 0;
-  height: 200%;
-  right: 0;
-  z-index: 999999999999999999999;
-}
-.popupBox.on .inner {
-  position: absolute;
-  top:500px;
-  left: 50%;
-  transform: translate(-50%);
-  background: #ff889e;
-  text-align: center;
-  padding: 20px;
-}
-.popupBox.on button {
-  font-size: 40px;
-  color:#ff889e;
-  position: absolute;
-  top:-35px;
-  right: -35px;
-  background: none;
-  border: none;
-}
-
 
 
 }
