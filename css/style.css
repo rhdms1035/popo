@@ -96,13 +96,13 @@ section .imgmm img{
 section .imgmm img:hover {
   transform:scale(1.1) 
 }
-section .imgmm li:after {
+section .imgmm li a:after {
   content:"";
    position:absolute; transition:all  0.4s;
   top:50%; left:50%; bottom:50%; right:50%; 
   background:rgba(255, 100, 123, 0.3);
 }
-section .imgmm li:hover:after {
+section .imgmm li:hover a:after {
   top:0%; left:0%; bottom:0%; right:0%; 
 }
 
@@ -243,3 +243,35 @@ footer .info2 em {font-style: normal;
 
   .closeMOgnb {display:none;}
   .openMOgnb {display: none;}
+
+/* 사진을 누르면 새로 창나오는 팝업박스 만들기 */
+.popupBox {display: none;}
+/* 팝업박스에 on이 붙으면 출력됨 */
+.popupBox.on {
+  display: block;
+  position: absolute;
+  top:0;
+  left: 0;
+  height: 200%;
+  right: 0;
+  background: rgba(0,0,0,0.7);
+  z-index: 999999999999999999999;
+}
+.popupBox.on .inner {
+  position: absolute;
+  top:900px;
+  left: 50%;
+  transform: translate(-50%);
+  background: #fff;
+  text-align: center;
+  padding: 20px;
+}
+.popupBox.on button {
+  font-size: 40px;
+  color:#fff;
+  position: absolute;
+  top:-35px;
+  right: -35px;
+  background: none;
+  border: none;
+}
