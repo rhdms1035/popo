@@ -300,6 +300,22 @@ footer .info {font-size: 14px;
     margin-bottom: 20px;
   }
 
+.gallery {position: relative;}
+.gallery ul {width: 100%; margin: 15px auto 0;}
+.gallery li {float: left; width: 33.33%;}
+.gallery li img {
+   padding: 7px;
+   border: 1px solid #ff889e;
+   width: 150px;
+   margin-top: 30px;
+  }
+  .gallery .gift {
+    top: 80%; left:50%; transform: translate(-50%, -50%); 
+    position: absolute; color:#ff889e; 
+    font-weight: bold; text-align: center;
+    font-size: 40px;
+   }
+
   footer ul li {font-size: 10px; float: left;  padding:10px;}
   footer .info {font-size: 12px; 
     line-height: 1.2; font-family: 'Kodchasan', sans-serif;
@@ -335,6 +351,23 @@ footer .info {font-size: 14px;
   #sns {position: absolute; top:80px; right: 50px;
       display: none;
   }
+
+  
+.gallery {position: relative;}
+.gallery ul {width: 100%; margin: 15px auto 0;}
+.gallery li {float: left; width: 33.33%;}
+.gallery li img {
+   padding: 7px;
+   border: 1px solid #ff889e;
+   width: 100px;
+   margin-top: 30px;
+  }
+  .gallery .gift {
+    top: 70%; left:50%; transform: translate(-50%, -50%); 
+    position: absolute; color:#ff889e; 
+    font-weight: bold; text-align: center;
+    font-size: 30px;
+   }
 
   footer ul li {font-size: 10px; float: left;  padding:3px;}
   footer .info {font-size: 12px; 
