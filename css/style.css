@@ -33,7 +33,7 @@ header {height: 85%; position: relative;}
   background: none;
   border: none;
   font-size: 50px;
-  color:#fff;
+  color:#ff889e;
 }
 .prevArrow { left: 20px; z-index: 99999999;}
 .nextArrow {right: 20px;}
@@ -52,7 +52,7 @@ header {height: 85%; position: relative;}
 .slick-dots li button {
   width:15px;
   height: 15px;
-  background: #fff;
+  background: #ff889e;
   border: none;
   text-indent: -999999px;
   overflow: hidden;
