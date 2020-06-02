@@ -71,7 +71,6 @@ footer .info {font-size: 14px;
 /* ★★★★★★★★★★★★★★★★★★★★★★★화면 799크기 */
 @media  screen  and  (max-width:799px) {
 
-
   .banner img {
     display: none;
   }
@@ -181,18 +180,21 @@ footer .info {font-size: 14px;
       }
 
       /* 작은메뉴 상단시작 */
+
       #gnb {display: none;}
-
-
       #header .row {
         background: #ff889e; 
         height: 120px;
         opacity: 0.7;
-        position: relative;
+        position: fixed;
+        width:100%;
+        top:0;
+        left: 0;
+        z-index: 99999999999999;
       }
       #header h1 { 
-        position: absolute; 
-        top:50%; left:50%; 
+        position: absolute; top:50%;
+        left: 50%;
         transform: translate(-50%, -50%);
       }
 

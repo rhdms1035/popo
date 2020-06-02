@@ -12,14 +12,63 @@ body {  color:#bbb; height:100%;
 }
 .row { max-width:1700px; margin:0 auto; }
 
-header {  height: 85%; background: url(../img/slider1_1.jpg) no-repeat;
-    background-size: cover; position:relative; background-position: center;
-    margin-bottom: 100px;}
+header {height: 85%; position: relative;}
 
-h1 { position:relative; top:100px;}
+/* 메인슬라이드3개 돌아가게 만들기 위한 기초작업 */
+.main_rolling_pc {height: 100%;position: relative; }
+.visualRoll {height: 100%;}
+.slide {  height: 700px; 
+    background-size: cover; position:relative; background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 0px;}
+.slide1 { background-image: url(../img/slider1_1.jpg); }
+.slide2 { background-image: url(../img/slider1_2.jpg); }
+.slide3 { background-image: url(../img/slider1_3.jpg); }
+
+/* 슬릭->슬라이드 양쪽화살표버튼 스타일잡기 */
+.marrow {
+  position: absolute;
+  top:50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 50px;
+  color:#fff;
+}
+.prevArrow { left: 20px; z-index: 99999999;}
+.nextArrow {right: 20px;}
+
+/* 슬릭->슬라이드 번호버튼 스타일잡기 */
+/* 동그라미버튼은 플러그인으로 불러왔기 때문에 .slick-dots으로 무조건해야함 */
+.slick-dots {
+  position: absolute;
+  bottom: 20px;
+  width:100%;
+  text-align: center;
+}
+.slick-dots li {
+  display: inline-block;
+}
+.slick-dots li button {
+  width:15px;
+  height: 15px;
+  background: #fff;
+  border: none;
+  text-indent: -999999px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+.slick-dots li.slick-active button {
+  width:30px;
+  border-radius: 50px;
+}
+
+
+h1 { position: fixed; top:80px;}
 h1 img {width: 150px;}
 
-#gnb { width: 220px; position:relative; top:150px; }
+#gnb { width: 220px; position: fixed; top:150px; }
 #gnb em { display: block; 
     font-style: normal;}
 /* 트랜스폼 속성은 block 요소에만 적용됨 */
