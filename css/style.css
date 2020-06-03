@@ -22,7 +22,7 @@ header {height: 85%; position: relative;}
     background-repeat: no-repeat;
     margin-bottom: 0px;}
 .slide1 { background-image: url(../img/slider1_1.jpg); }
-.slide2 { background-image: url(../img/slider1_2.jpg); }
+
 .slide3 { background-image: url(../img/slider1_3.jpg); }
 
 /* 슬릭->슬라이드 양쪽화살표버튼 스타일잡기 */
