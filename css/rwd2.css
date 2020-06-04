@@ -255,13 +255,6 @@ footer .info {font-size: 14px;
    background: #fff;  position: absolute; top:5px; right: 15px; }
   .closeMOgnb span:nth-of-type(2) {transform: rotate(-45deg);}
 
-/* sns다시 나타나게하기 */
-#sns {
-  position: absolute; 
-  top:600px; left:270px; 
-}
-#sns li {display: inline-block; font-size: 30px; color: #e17285; opacity: 0.5; margin-right: 20px; transition: all 0.5s;} 
-#sns li:hover {transform: scale(1.5);}
 
 
 

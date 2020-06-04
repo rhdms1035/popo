@@ -14,7 +14,7 @@ body {  color:#bbb; height:100%;
 
 header {height: 85%; position: relative;}
 
-/* 메인슬라이드3개 돌아가게 만들기 위한 기초작업 */
+/* 메인슬라이드2개 돌아가게 만들기 위한 기초작업 */
 .main_rolling_pc {height: 100%;position: relative; }
 .visualRoll {height: 100%;}
 .slide {  height: 700px; 
@@ -22,7 +22,6 @@ header {height: 85%; position: relative;}
     background-repeat: no-repeat;
     margin-bottom: 0px;}
 .slide1 { background-image: url(../img/slider1_1.jpg); }
-
 .slide3 { background-image: url(../img/slider1_3.jpg); }
 
 /* 슬릭->슬라이드 양쪽화살표버튼 스타일잡기 */
@@ -65,10 +64,10 @@ header {height: 85%; position: relative;}
 }
 
 
-h1 { position: fixed; top:80px;}
+h1 { position: absolute;  top:80px;}
 h1 img {width: 150px;}
 
-#gnb { width: 220px; position: fixed; top:150px; }
+#gnb { width: 220px; position: absolute; top:150px; }
 #gnb em { display: block; 
     font-style: normal;}
 /* 트랜스폼 속성은 block 요소에만 적용됨 */
