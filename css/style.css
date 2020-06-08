@@ -107,7 +107,8 @@ h1 img {width: 150px;}
 
 
 #sns {position: absolute; top:80px; right: 50px;}
-#sns li {display: inline-block; font-size: 25px; color: #e17285; opacity: 0.5; margin-right: 20px; transition: all 0.5s;} 
+#sns li {display: inline-block; font-size: 25px; color: #eb0027; 
+  opacity: 0.5; margin-right: 20px; transition: all 0.5s;} 
 #sns li:hover {transform: scale(1.5);}
 
 section .me h2 {
@@ -153,7 +154,19 @@ section .imgmm li a:after {
 section .imgmm li:hover a:after {
   top:0%; left:0%; bottom:0%; right:0%; 
 }
+/* 이미지호버하면 돋보기모양나오게하기 */
+section .imgmm li a:before  {
+  content:"\f00e";
+  font-family:'Font Awesome 5 Free'; 
+  font-weight:900 !important;
+  color:#fff;
+  font-size:30px;
+  position:absolute; top:50%; left:50%;
+  transform:translate(-50%, -50%);
+  opacity:0;  transition:all  0.4s  0.2s;  z-index:99999999  }
+  section .imgmm li:hover a:before  { opacity:1  }
 
+  
 section .imglong {
 background-color:#ff889e;
 margin-top: 80px;
